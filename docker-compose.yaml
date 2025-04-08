@@ -50,10 +50,11 @@ services:
     networks:
       - my_network
   order-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      no_cache: true
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#      no_cache: true
+    image: 338511574097.dkr.ecr.ap-southeast-2.amazonaws.com/sss/onewallex/order-api:25.0402.0937_main_56bce00
     container_name: order-api
     ports:
       - "8080:8080"
